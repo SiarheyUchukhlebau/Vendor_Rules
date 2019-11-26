@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="Vendor\Rules\Block\Adminhtml\Example\Rule\Edit\Tabs" name="example_rule_edit_tabs">
+                <block class="Vendor\Rules\Block\Adminhtml\Example\Rule\Edit\Tab\Main" name="example_rule_edit_tab_main"/>
+                <block class="Vendor\Rules\Block\Adminhtml\Example\Rule\Edit\Tab\Conditions" name="example_rule_edit_tab_conditions"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">example_rule_edit_tab_main</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">conditions_section</argument>
+                    <argument name="block" xsi:type="string">example_rule_edit_tab_conditions</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Vendor\Rules\Block\Adminhtml\Example\Rule\Edit" name="example_rule_edit"/>
+        </referenceContainer>
+    </body>
+</page>
