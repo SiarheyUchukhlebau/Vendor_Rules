@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Vendor_Rules::vendor_rules"
+             title="Example Rules"
+             module="Vendor_Rules"
+             parent="Magento_CatalogRule::promo"
+             sortOrder="40"
+             action="vendor_rules/example_rule/index"
+             dependsOnModule="Magento_Sales"
+             resource="Vendor_Rules::rule"
+        />
+    </menu>
+</config>
