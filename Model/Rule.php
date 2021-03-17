@@ -84,6 +84,18 @@ class Rule extends AbstractModel
     }
 
     /**
+     * Validate rule conditions to determine if rule can run
+     *
+     * @param \Magento\Framework\DataObject $object
+     * @return bool
+     */
+    public function validate(\Magento\Framework\DataObject $object)
+    {
+        // Here the validation object could be modified
+        return parent::validate($object);
+    }
+
+    /**
      * Get rule condition combine model instance
      *
      * @return \Magento\SalesRule\Model\Rule\Condition\Combine

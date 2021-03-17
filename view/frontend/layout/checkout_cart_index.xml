@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="checkout.cart.form.before">
+            <block class="Vendor\Rules\Block\Cart\RuleExample" name="custom_block_with_rules" template="Vendor_Rules::cart/example.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
